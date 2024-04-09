@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Django Fortune Teller</title>
+ <style> 
+  h1 {
+  color: #CC7870;
+  font-size: 50px;
+  text-align: left;
+}
+  body {
+    line-height: 1;
+    padding:10px;
+    margin:10px;
+}
+  p {
+    color: darkslategray;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 75%;
+    margin: 0 auto; /* Center the paragraphs horizontally */
+  }
+  button {
+    background-color: #EDE3C7;
+    text-align: center;
+    font-size: 90%;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+ </style>
+</head>
+<body>
+
+ <h1>Here is your fortune:</h1>
+
+ <p>{{ fortune }}</p>
+
+ <h1>Check your horoscope: </h1>
+ <p>{{ horoscope }}</p>
+
+<br>
+<button>
+<p> <a href="{% url 'fortune_and_horoscope' %}">Get a new fortune and horoscope</a> </p> </button>
+
+
+
+</body>
+</html>
